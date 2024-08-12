@@ -1,5 +1,5 @@
 Package: diamonds
-Title: What the Package Does (One Line, Title Case)
+Title: Posit::conf R in Production Workshop
 Version: 0.0.0.9000
 Authors@R: 
     person("Allison", "Mason", , "masonar@umich.edu", role = c("aut", "cre"),
