@@ -1,0 +1,25 @@
+---
+title: "Plot"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libs, include = FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+```{r cut_price, echo=FALSE}
+diamonds %>%
+  ggplot() +
+  aes(x = cut, y = price) +
+  geom_boxplot() +
+  labs(title = "Diamond Price By Cut",
+       x = "Price (USD)",
+       y = "Diamond Cut") +
+  theme_bw() 
+```
+
